@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "MacKaraoke-arm64-apple-macosx-debug.exe": ["<MacKaraoke-arm64-apple-macosx-debug.exe>"]
+  "MacKaraoke-arm64-apple-macosx-debug.module": ["<MacKaraoke-arm64-apple-macosx-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<MacKaraoke-arm64-apple-macosx-debug.exe>","<MacKaraoke-arm64-apple-macosx-debug.module>"]
+  "test": ["<MacKaraoke-arm64-apple-macosx-debug.exe>","<MacKaraoke-arm64-apple-macosx-debug.module>"]
+default: "main"
+nodes:
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke":
+    is-mutated: true
+commands:
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke-entitlement.plist"]
+    description: "Write auxiliary file /Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke-entitlement.plist"
+
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/KaraokeView.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsModels.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsProvider.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/MediaProvider.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/PlaybackClock.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/SpotifyProvider.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/main.swift"]
+    outputs: ["/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources"]
+    description: "Write auxiliary file /Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources"
+
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.swift.o"]
+    outputs: ["/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.product/Objects.LinkFileList"
+
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<MacKaraoke-arm64-apple-macosx-debug.exe>":
+    tool: phony
+    inputs: ["<MacKaraoke-arm64-apple-macosx-debug.exe-CodeSigning>"]
+    outputs: ["<MacKaraoke-arm64-apple-macosx-debug.exe>"]
+
+  "<MacKaraoke-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/Modules/MacKaraoke.swiftmodule"]
+    outputs: ["<MacKaraoke-arm64-apple-macosx-debug.module>"]
+
+  "C.MacKaraoke-arm64-apple-macosx-debug.exe":
+    tool: shell
+    inputs: ["/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.product/Objects.LinkFileList"]
+    outputs: ["/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/MacKaraoke"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug","-o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke","-module-name","MacKaraoke","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_MacKaraoke_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/Modules/MacKaraoke.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.MacKaraoke-arm64-apple-macosx-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke-entitlement.plist"]
+    outputs: ["<MacKaraoke-arm64-apple-macosx-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/MacKaraoke"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke-entitlement.plist","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke"]
+
+  "C.MacKaraoke-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/KaraokeView.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsModels.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsProvider.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/MediaProvider.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/PlaybackClock.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/SpotifyProvider.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/main.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources"]
+    outputs: ["/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.swift.o","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/Modules/MacKaraoke.swiftmodule"]
+    description: "Compiling Swift Module 'MacKaraoke' (7 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","MacKaraoke","-emit-dependencies","-emit-module","-emit-module-path","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/Modules/MacKaraoke.swiftmodule","-output-file-map","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/output-file-map.json","-incremental","-c","@/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources","-I","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","MacKaraoke_main","-color-diagnostics","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","mackaraoke_phase1"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/","/Users/manvayy/Downloads/MacKaraoke-Phase1/Package.swift","/Users/manvayy/Downloads/MacKaraoke-Phase1/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

@@ -1,0 +1,54 @@
+{
+  "": {
+    "swift-dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/primary.swiftdeps"
+  },
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/KaraokeView.swift": {
+    "dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.d",
+    "object": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.swift.o",
+    "swiftmodule": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView~partial.swiftmodule",
+    "swift-dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.swiftdeps",
+    "diagnostics": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.dia"
+  },
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsModels.swift": {
+    "dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.d",
+    "object": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.swift.o",
+    "swiftmodule": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels~partial.swiftmodule",
+    "swift-dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.swiftdeps",
+    "diagnostics": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.dia"
+  },
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsProvider.swift": {
+    "dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.d",
+    "object": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.swift.o",
+    "swiftmodule": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.swiftdeps",
+    "diagnostics": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.dia"
+  },
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/MediaProvider.swift": {
+    "dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.d",
+    "object": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.swift.o",
+    "swiftmodule": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.swiftdeps",
+    "diagnostics": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.dia"
+  },
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/PlaybackClock.swift": {
+    "dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.d",
+    "object": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.swift.o",
+    "swiftmodule": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock~partial.swiftmodule",
+    "swift-dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.swiftdeps",
+    "diagnostics": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.dia"
+  },
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/SpotifyProvider.swift": {
+    "dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.d",
+    "object": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.swift.o",
+    "swiftmodule": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.swiftdeps",
+    "diagnostics": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.dia"
+  },
+  "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/main.swift": {
+    "dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.d",
+    "object": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.swift.o",
+    "swiftmodule": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.swiftdeps",
+    "diagnostics": "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.dia"
+  }
+}
