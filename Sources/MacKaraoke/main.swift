@@ -143,48 +143,39 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         print("Left auxiliary area:  \(areas.left)")
         print("Right auxiliary area: \(areas.right)")
 
-        // The auxiliary area macOS reports is flush against the physical
-        // top of the screen with no slack. Rather than offsetting the
-        // rendered text (which just gets clipped by the window bounds),
-        // we grow the window's height downward so the padded text has
-        // real room to sit in. The top edge stays anchored at the screen
-        // edge; only the bottom edge extends further down the screen.
-        let verticalSlack: CGFloat = 8
-
+        let verticalSlack: CGFloat = 1
+        let notchGap: CGFloat = 0
         let leftRect = NSRect(
             x: areas.left.origin.x,
             y: areas.left.origin.y - verticalSlack,
-            width: areas.left.width,
+            width: max(0, areas.left.width - notchGap),
             height: areas.left.height + verticalSlack
         )
         let rightRect = NSRect(
-            x: areas.right.origin.x,
+            x: areas.right.origin.x + notchGap,
             y: areas.right.origin.y - verticalSlack,
-            width: areas.right.width,
+            width: max(0, areas.right.width - notchGap),
             height: areas.right.height + verticalSlack
         )
+        let notchBridgeRect = NSRect(
+            x: leftRect.maxX,
+            y: min(leftRect.minY, rightRect.minY),
+            width: max(0, rightRect.minX - leftRect.maxX),
+            height: max(leftRect.height, rightRect.height)
+        )
 
+        let notchBridgeWindow = OverlayWindow(rect: notchBridgeRect) {
+            Color.black
+        }
         let leftWindow = OverlayWindow(rect: leftRect) {
-            KaraokeOverlayView(clock: clock, lyricsStore: lyricsStore, alignment: .trailing, showNextLine: false)
+            NotchKaraokeContainerView(clock: clock, lyricsStore: lyricsStore, side: .left)
         }
         let rightWindow = OverlayWindow(rect: rightRect) {
-            KaraokeOverlayView(clock: clock, lyricsStore: lyricsStore, alignment: .leading, showNextLine: true)
+            NotchKaraokeContainerView(clock: clock, lyricsStore: lyricsStore, side: .right)
         }
 
-        overlayWindows = [leftWindow, rightWindow]
+        overlayWindows = [notchBridgeWindow, leftWindow, rightWindow]
 
-        // Hover zone spans the full screen width at the same height as the
-        // overlay windows, so moving toward any part of the menu bar (not
-        // just directly over our text) triggers the fade.
-//        let hitRect = NSRect(
-//            x: screen.frame.minX,
-//            y: leftRect.origin.y,
-//            width: screen.frame.width,
-//            height: leftRect.height
-//        )
-        // Use the real system menu bar height (screen frame minus visible frame),
-        // not our smaller overlay rect — this guarantees the hover zone covers
-        // the entire menu bar strip, including areas we don't draw text in.
         let menuBarHeight = screen.frame.height - screen.visibleFrame.height
         let hitRect = NSRect(
             x: screen.frame.minX,
@@ -193,8 +184,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             height: menuBarHeight
         )
         setUpHoverDetection(hitRect: hitRect)
-
-//        clock.play()
     }
 
     // A small real menu-bar item is added purely so you have a way to quit
@@ -268,3 +257,5 @@ let app = NSApplication.shared
 let delegate = AppDelegate()
 app.delegate = delegate
 app.run()
+
+

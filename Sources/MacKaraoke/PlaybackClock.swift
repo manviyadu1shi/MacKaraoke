@@ -5,7 +5,7 @@ import Combine
 // Same play/pause/seek interface — only the driving source changes later.
 final class PlaybackClock: ObservableObject {
     @Published private(set) var currentTime: TimeInterval = 0
-    private(set) var isPlaying = false
+    @Published private(set) var isPlaying = false
 
     private var timer: Timer?
     private var startDate: Date?

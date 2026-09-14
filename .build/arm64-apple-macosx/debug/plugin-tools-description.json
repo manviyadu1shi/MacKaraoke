@@ -19,57 +19,57 @@
   "swiftCommands" : {
     "C.MacKaraoke-arm64-apple-macosx-debug.module" : {
       "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "fileList" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources",
-      "importPath" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/Modules",
+      "fileList" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources",
+      "importPath" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/KaraokeView.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/KaraokeView.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsModels.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/LyricsModels.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsProvider.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/LyricsProvider.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/MediaProvider.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/MediaProvider.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/PlaybackClock.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/PlaybackClock.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/SpotifyProvider.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/SpotifyProvider.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/main.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/main.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources"
         }
       ],
       "isLibrary" : false,
       "moduleName" : "MacKaraoke",
-      "moduleOutputPath" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/Modules/MacKaraoke.swiftmodule",
+      "moduleOutputPath" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/Modules/MacKaraoke.swiftmodule",
       "objects" : [
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.swift.o",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.swift.o",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.swift.o",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.swift.o",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.swift.o",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.swift.o",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.swift.o"
+        "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.swift.o",
+        "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.swift.o",
+        "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.swift.o",
+        "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.swift.o",
+        "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.swift.o",
+        "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.swift.o",
+        "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -78,7 +78,7 @@
         "-enable-batch-mode",
         "-serialize-diagnostics",
         "-index-store-path",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/index/store",
+        "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/index/store",
         "-Onone",
         "-enable-testing",
         "-j10",
@@ -86,7 +86,7 @@
         "-DDEBUG",
         "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
         "-module-cache-path",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/ModuleCache",
+        "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
         "-Xfrontend",
         "-entry-point-function-name",
@@ -119,54 +119,54 @@
         "-Xcc",
         "-g",
         "-package-name",
-        "mackaraoke_phase1"
+        "mackaraoke"
       ],
-      "outputFileMapPath" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/Modules/MacKaraoke.swiftmodule"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/Modules/MacKaraoke.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/KaraokeView.swift",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsModels.swift",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsProvider.swift",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/MediaProvider.swift",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/PlaybackClock.swift",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/SpotifyProvider.swift",
-        "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/main.swift"
+        "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/KaraokeView.swift",
+        "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/LyricsModels.swift",
+        "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/LyricsProvider.swift",
+        "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/MediaProvider.swift",
+        "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/PlaybackClock.swift",
+        "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/SpotifyProvider.swift",
+        "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/main.swift"
       ],
-      "tempsPath" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build",
+      "tempsPath" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build",
       "wholeModuleOptimization" : false
     }
   },
@@ -179,24 +179,24 @@
       "-module-name",
       "MacKaraoke",
       "-package-name",
-      "mackaraoke_phase1",
+      "mackaraoke",
       "-c",
-      "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/KaraokeView.swift",
-      "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsModels.swift",
-      "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsProvider.swift",
-      "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/MediaProvider.swift",
-      "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/PlaybackClock.swift",
-      "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/SpotifyProvider.swift",
-      "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/main.swift",
+      "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/KaraokeView.swift",
+      "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/LyricsModels.swift",
+      "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/LyricsProvider.swift",
+      "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/MediaProvider.swift",
+      "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/PlaybackClock.swift",
+      "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/SpotifyProvider.swift",
+      "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/main.swift",
       "-I",
-      "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/Modules",
+      "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/Modules",
       "-target",
       "arm64-apple-macosx13.0",
       "-incremental",
       "-enable-batch-mode",
       "-serialize-diagnostics",
       "-index-store-path",
-      "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/index/store",
+      "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/index/store",
       "-Onone",
       "-enable-testing",
       "-j10",
@@ -204,7 +204,7 @@
       "-DDEBUG",
       "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
       "-module-cache-path",
-      "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/ModuleCache",
+      "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
       "-Xfrontend",
       "-entry-point-function-name",
@@ -237,7 +237,7 @@
       "-Xcc",
       "-g",
       "-package-name",
-      "mackaraoke_phase1",
+      "mackaraoke",
       "-driver-use-frontend-path",
       "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
     ]
@@ -259,7 +259,7 @@
     }
   },
   "writeCommands" : {
-    "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke-entitlement.plist" : {
+    "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke-entitlement.plist" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -271,9 +271,9 @@
           "name" : "<com.apple.security.get-task-allow>"
         }
       ],
-      "outputFilePath" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke-entitlement.plist"
+      "outputFilePath" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke-entitlement.plist"
     },
-    "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources" : {
+    "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -282,36 +282,36 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/KaraokeView.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/KaraokeView.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsModels.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/LyricsModels.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/LyricsProvider.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/LyricsProvider.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/MediaProvider.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/MediaProvider.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/PlaybackClock.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/PlaybackClock.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/SpotifyProvider.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/SpotifyProvider.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/Sources/MacKaraoke/main.swift"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/Sources/MacKaraoke/main.swift"
         }
       ],
-      "outputFilePath" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources"
+      "outputFilePath" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/sources"
     },
-    "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.product/Objects.LinkFileList" : {
+    "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.product/Objects.LinkFileList" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -320,36 +320,36 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/KaraokeView.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsModels.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/LyricsProvider.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/MediaProvider.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/PlaybackClock.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/SpotifyProvider.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.swift.o"
+          "name" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.build/main.swift.o"
         }
       ],
-      "outputFilePath" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/MacKaraoke.product/Objects.LinkFileList"
+      "outputFilePath" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/MacKaraoke.product/Objects.LinkFileList"
     },
-    "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+    "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
       "alwaysOutOfDate" : true,
       "inputs" : [
         {
@@ -361,7 +361,7 @@
           "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
         }
       ],
-      "outputFilePath" : "/Users/manvayy/Downloads/MacKaraoke-Phase1/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+      "outputFilePath" : "/Users/manvayy/Downloads/MacKaraoke/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
     }
   }
 }
